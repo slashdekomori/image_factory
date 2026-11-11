@@ -45,7 +45,7 @@ source "qemu" "debian" {
   shutdown_command = ""
   shutdown_timeout = "5m"
 
-  output_directory = "../output"
+  output_directory = "output"
   vm_name          = "debian-13-custom.qcow2"
 }
 
