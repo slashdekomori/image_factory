@@ -1,0 +1,103 @@
+2026/11/12 04:03:44 [INFO] Packer version: 1.16.2 [go1.27.3-X:nodwarf5 linux amd64]
+2026/11/12 04:03:44 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2026/11/12 04:03:44 [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/dekomori/.packerconfig
+2026/11/12 04:03:44 [WARN] Config file doesn't exist: /home/dekomori/.packerconfig
+2026/11/12 04:03:44 [INFO] Setting cache directory: /home/dekomori/.cache/packer
+2026/11/12 04:03:44 [TRACE] listing potential installations for "github.com/hashicorp/qemu" that match ">= 1.1.0". plugingetter.ListInstallationsOptions{PluginDirectory:"/home/dekomori/.config/packer/plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"linux", ARCH:"amd64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.Digest)(0x3b627583b380)}}, ReleasesOnly:false}}
+2026/11/12 04:03:44 [TRACE] Found the following "github.com/hashicorp/qemu" installations: [{/home/dekomori/.config/packer/plugins/github.com/hashicorp/qemu/packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 v1.1.8 x5.0}]
+2026/11/12 04:03:44 [INFO] found external [-packer-default-plugin-name-] builders from qemu plugin
+2026/11/12 04:03:44 [TRACE] listing potential installations for <nil> that match "". plugingetter.ListInstallationsOptions{PluginDirectory:"/home/dekomori/.config/packer/plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"linux", ARCH:"amd64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.Digest)(0x3b6275972100)}}, ReleasesOnly:false}}
+2026/11/12 04:03:44 [INFO] found external [-packer-default-plugin-name- clone iso] builders from proxmox plugin
+2026/11/12 04:03:44 [INFO] found external [-packer-default-plugin-name-] builders from qemu plugin
+2026/11/12 04:03:44 [TRACE] Using protobuf for communication with plugins
+2026/11/12 04:03:44 [INFO] Starting external plugin /home/dekomori/.config/packer/plugins/github.com/hashicorp/qemu/packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 start builder --protobuf -packer-default-plugin-name-
+2026/11/12 04:03:44 Starting plugin: /home/dekomori/.config/packer/plugins/github.com/hashicorp/qemu/packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 []string{"/home/dekomori/.config/packer/plugins/github.com/hashicorp/qemu/packer-plugin-qemu_v1.1.8_x5.0_linux_amd64", "start", "builder", "--protobuf", "-packer-default-plugin-name-"}
+2026/11/12 04:03:44 Waiting for RPC address for: /home/dekomori/.config/packer/plugins/github.com/hashicorp/qemu/packer-plugin-qemu_v1.1.8_x5.0_linux_amd64
+2026/11/12 04:03:44 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:44 Plugin address: unix /tmp/packer-plugin3216316264
+2026/11/12 04:03:44 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:44 Waiting for connection...
+2026/11/12 04:03:44 Received unix RPC address for /home/dekomori/.config/packer/plugins/github.com/hashicorp/qemu/packer-plugin-qemu_v1.1.8_x5.0_linux_amd64: addr is /tmp/packer-plugin3216316264
+2026/11/12 04:03:44 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:44 Serving a plugin connection...
+2026/11/12 04:03:44 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:44 [TRACE] starting builder -packer-default-plugin-name-
+2026/11/12 04:03:44 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:44 [DEBUG] - common: sending ConfigSpec as protobuf
+2026/11/12 04:03:44 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/11/12 04:03:44 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:44 use specified accelerator: kvm
+2026/11/12 04:03:44 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:44 [DEBUG] - common: sending ConfigSpec as protobuf
+2026/11/12 04:03:44 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/11/12 04:03:44 [INFO] Starting external plugin /usr/bin/packer execute --protobuf packer-provisioner-shell
+2026/11/12 04:03:44 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "execute", "--protobuf", "packer-provisioner-shell"}
+2026/11/12 04:03:44 Waiting for RPC address for: /usr/bin/packer
+2026/11/12 04:03:44 packer-provisioner-shell plugin: [INFO] Packer version: 1.16.2 [go1.27.3-X:nodwarf5 linux amd64]
+2026/11/12 04:03:44 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2026/11/12 04:03:44 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/dekomori/.packerconfig
+2026/11/12 04:03:44 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/dekomori/.packerconfig
+2026/11/12 04:03:44 packer-provisioner-shell plugin: [INFO] Setting cache directory: /home/dekomori/.cache/packer
+2026/11/12 04:03:44 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin2856978232
+2026/11/12 04:03:44 packer-provisioner-shell plugin: Waiting for connection...
+2026/11/12 04:03:44 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin2856978232
+2026/11/12 04:03:44 packer-provisioner-shell plugin: Serving a plugin connection...
+2026/11/12 04:03:44 packer-provisioner-shell plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2026/11/12 04:03:44 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/11/12 04:03:44 packer-provisioner-shell plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2026/11/12 04:03:44 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/11/12 04:03:44 Build debug mode: false
+2026/11/12 04:03:44 Force build: false
+2026/11/12 04:03:44 On error: 
+2026/11/12 04:03:44 Waiting on builds to complete...
+2026/11/12 04:03:44 Starting build run: qemu.redos
+[1;32mqemu.redos: output will be in this color.[0m
+
+2026/11/12 04:03:44 Running builder: qemu
+2026/11/12 04:03:44 [INFO] (telemetry) Starting builder qemu.redos
+2026/11/12 04:03:44 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:44 Qemu path: /usr/bin/qemu-system-x86_64, Qemu Image path: /usr/bin/qemu-img
+[1;32m==> qemu.redos: Retrieving ISO[0m
+2026/11/12 04:03:44 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:44 Acquiring lock for: file:///home/dekomori/Projects/image-factory/redos-server/iso/redos-8-20260716.0-Everything-x86_64-DVD1.iso?checksum=md5%3A882b618822735bd7a32d2a002b683430 (/home/dekomori/.cache/packer/6408ca0bac0edcc4c3414997df779794b3f12a1b.iso.lock)
+[1;32m==> qemu.redos: Trying file:///home/dekomori/Projects/image-factory/redos-server/iso/redos-8-20260716.0-Everything-x86_64-DVD1.iso[0m
+[1;32m==> qemu.redos: Trying file:///home/dekomori/Projects/image-factory/redos-server/iso/redos-8-20260716.0-Everything-x86_64-DVD1.iso?checksum=md5%3A882b618822735bd7a32d2a002b683430[0m
+2026/11/12 04:03:59 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:59 Leaving retrieve loop for ISO
+2026/11/12 04:03:59 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:59 No floppy files specified. Floppy disk will not be made.
+2026/11/12 04:03:59 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:59 No CD files specified. CD disk will not be made.
+[1;32m==> qemu.redos: file:///home/dekomori/Projects/image-factory/redos-server/iso/redos-8-20260716.0-Everything-x86_64-DVD1.iso?checksum=md5%3A882b618822735bd7a32d2a002b683430 => /home/dekomori/Projects/image-factory/redos-server/iso/redos-8-20260716.0-Everything-x86_64-DVD1.iso[0m
+2026/11/12 04:03:59 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:59 [INFO] Creating disk with Path: output/redos8-cloud.qcow2 and Size: 20G
+2026/11/12 04:03:59 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:03:59 Executing qemu-img: []string{"create", "-f", "qcow2", "output/redos8-cloud.qcow2", "20G"}
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 stdout: Formatting 'output/redos8-cloud.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=21474836480 lazy_refcounts=off refcount_bits=16
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 stderr:
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Found available port: 8828 on IP: 0.0.0.0
+[1;32m==> qemu.redos: Starting HTTP server on port 8828[0m
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Looking for available communicator (SSH, WinRM, etc) port between 2222 and 4444
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Found available port: 2390 on IP: 127.0.0.1
+[1;32m==> qemu.redos: Found port for communicator (SSH, WinRM, etc): 2390.[0m
+[1;32m==> qemu.redos: Creating temporary RSA SSH key for instance...[0m
+[1;32m==> qemu.redos: Looking for available port between 5900 and 6000 on 127.0.0.1[0m
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Looking for available port between 5900 and 6000 on 127.0.0.1
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Found available port: 5939 on IP: 127.0.0.1
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Found available VNC port: 5939 on IP: 127.0.0.1
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Qemu --version output: QEMU emulator version 11.1.3
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: Copyright (c) 2003-2026 Fabrice Bellard and the QEMU Project developers
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Qemu version: 11.1.3
+[1;32m==> qemu.redos: Starting VM, booting from CD-ROM[0m
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Qemu Builder has no floppy files, not attaching a floppy.
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Executing /usr/bin/qemu-system-x86_64: []string{"-device", "virtio-scsi-pci,id=scsi0", "-device", "scsi-hd,bus=scsi0.0,drive=drive0", "-device", "virtio-net,netdev=user.0", "-drive", "if=none,file=output/redos8-cloud.qcow2,id=drive0,cache=writeback,discard=ignore,format=qcow2", "-drive", "file=/home/dekomori/Projects/image-factory/redos-server/iso/redos-8-20260716.0-Everything-x86_64-DVD1.iso,media=cdrom", "-vnc", "127.0.0.1:39", "-m", "2048M", "-display", "gtk", "-machine", "type=pc,accel=kvm", "-smp", "2", "-netdev", "user,id=user.0,hostfwd=tcp::2390-:22", "-boot", "once=d", "-name", "redos8-cloud.qcow2"}
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Started Qemu. Pid: 963828
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 Qemu stderr: qemu-system-x86_64: Display 'gtk' is not available.
+[1;31m==> qemu.redos: Error launching VM: Qemu failed to start. Please run with PACKER_LOG=1 to get more info.[0m
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 failed to unlock port lockfile: close tcp 127.0.0.1:5939: use of closed network connection
+2026/11/12 04:04:00 packer-plugin-qemu_v1.1.8_x5.0_linux_amd64 plugin: 2026/11/12 04:04:00 failed to unlock port lockfile: close tcp 127.0.0.1:2390: use of closed network connection
+[1;32m==> qemu.redos: Deleting output directory...[0m
+[1;31mBuild 'qemu.redos' errored after 16 seconds 145 milliseconds: Build was halted.[0m
+
+==> Wait completed after 16 seconds 145 milliseconds
+
+2026/11/12 04:04:00 [INFO] (telemetry) ending qemu.redos
+==> Wait completed after 16 seconds 145 milliseconds
+2026/11/12 04:04:00 machine readable: error-count []string{"1"}
+==> Some builds didn't complete successfully and had errors:
+2026/11/12 04:04:00 machine readable: qemu.redos,error []string{"Build was halted."}
+==> Builds finished but no artifacts were created.
+==> Some builds didn't complete successfully and had errors:
+--> qemu.redos: Build was halted.
+
+2026/11/12 04:04:00 [INFO] (telemetry) Finalizing.
+==> Builds finished but no artifacts were created.
+2026/11/12 04:04:01 waiting for all plugin processes to complete...
+2026/11/12 04:04:01 /home/dekomori/.config/packer/plugins/github.com/hashicorp/qemu/packer-plugin-qemu_v1.1.8_x5.0_linux_amd64: plugin process exited
+2026/11/12 04:04:01 /usr/bin/packer: plugin process exited
